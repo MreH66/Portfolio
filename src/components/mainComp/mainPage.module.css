@@ -81,17 +81,6 @@
 
 }
 
-@media only screen and (max-width: 400px) {
-
-  .divImg {
-    left: 20%;
-  }
-
-  .positionLinksGrid {
-    left: 5%;
-  }
- 
-}
 
 .mainDiv {
 
@@ -226,7 +215,7 @@ grid-template-rows: 1fr;
   .MainLinksAndImgDiv {
     right: 10%;
     bottom: 15%;
-    height: 65vh;
+    height: 60vh;
   }
 
 }
@@ -460,15 +449,23 @@ border-style: solid;
 
   float: left;
 
-  position: relative;
- bottom: 20vh;
- left: 25vh;
-
 
   padding: 20px;
 
   background-color: #4e54c8;
   border-radius: 50%;
+}
+
+.onlyOneDiv {
+  position: relative;
+  bottom: 20vh;
+  left: 25vh;
+}
+
+.twoDivs {
+  position: relative;
+  bottom: 20vh;
+  left: 25vh;
 }
 
 
@@ -626,7 +623,6 @@ border-style: solid;
 
 }
 
-
 @media only screen and (max-width: 370px) {
 
 .gridLinks {
@@ -682,7 +678,68 @@ height: 230px;
 }
 
 @media only screen and (max-height: 650px) { 
-.gridLinks {
-  left: 33vh;
+
+.twoDivs {
+  position: relative;
+  bottom: 22vh;
 }
+
+.onlyOneDiv {
+  left: 22vh;
+}
+
+}
+
+
+ @media only screen and (max-width: 380px) { 
+
+.gridLinks {
+  left: 30vh;
+}
+
+
+
+} 
+
+@media (min-height: 700px) and (max-width: 400px) { 
+
+  .gridLinks {
+    left: 25vh;
+  }
+
+  .twoDivs {
+    position: relative;
+    bottom: 23vh;
+    left: 30vh;
+  }
+
+}
+
+@media only screen and (max-width: 400px) {
+
+  .divImg {
+    left: 20%;
+  }
+
+  .positionLinksGrid {
+    left: 5%;
+  }
+
+  .twoDivs {
+    position: relative;
+    bottom: 21vh;
+    left: 25vh;
+  }
+ 
+}
+
+
+@media (max-height: 750px) and (max-width: 370px) {
+
+  .twoDivs {
+    position: relative;
+    bottom: 21vh;
+    left: 32vh;
+  }
+
 }

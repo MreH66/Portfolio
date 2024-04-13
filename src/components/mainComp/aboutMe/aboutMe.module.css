@@ -77,7 +77,7 @@ grid-row-gap: 0px;
 
   .mainDivOnlyTextMainPage {
     position: relative;
-    top: 40%;
+    top: 36%;
   }
 
   .scrollDiv {
@@ -238,7 +238,7 @@ top: 25%;
  @media only screen and  (max-width: 400px) {
 
   .textDivScrollOnly {
-    height: 45vh;
+    height: 43vh;
 
   }
 
@@ -410,4 +410,18 @@ top: 25%;
     height: 45vh;
   }
 
+}
+
+@media only screen and (max-height: 750px) {
+
+  .mainDivOnlyTextMainPage {
+    top: 40%;
+  }
+
+}
+
+@media only screen and (max-height: 680px) {
+  .mainDivOnlyTextMainPage {
+    top: 50%;
+  }
 }
