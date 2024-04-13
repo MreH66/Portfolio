@@ -715,6 +715,17 @@ height: 230px;
 
 }
 
+
+@media (max-height: 750px) and (max-width: 370px) {
+
+  .twoDivs {
+    position: relative;
+    bottom: 21vh;
+    left: 32vh;
+  }
+
+}
+
 @media only screen and (max-width: 400px) {
 
   .divImg {
@@ -728,18 +739,19 @@ height: 230px;
   .twoDivs {
     position: relative;
     bottom: 21vh;
-    left: 25vh;
+    left: 20vh;
   }
  
 }
 
-
-@media (max-height: 750px) and (max-width: 370px) {
+@media only screen and (max-width: 330px) {
 
   .twoDivs {
-    position: relative;
-    bottom: 21vh;
-    left: 32vh;
+    left: 18vh;
   }
 
+  .mainImg {
+    left: 20%;
+  }
+ 
 }
