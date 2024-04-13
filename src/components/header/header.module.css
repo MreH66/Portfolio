@@ -1,0 +1,13 @@
+.mainH {
+
+    text-align: center;
+
+}
+
+
+@media only screen and (max-width: 800px) {
+    .mainH {
+        margin-top: -3vh
+    }
+    
+}

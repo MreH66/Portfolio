@@ -1,0 +1,319 @@
+.textHeaderSecond {
+    font-size: 2.5rem;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.mainHeader {
+    text-align: center;
+    margin-top: 30px;
+
+    color: azure;
+
+    font-family: "Slackside One", cursive;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 4rem;
+    text-decoration: underline;
+}
+
+.mainHeader:hover {
+    cursor: pointer;
+}
+
+
+.mainTextInfoDiv {
+    display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: 1fr;
+
+margin-bottom: 2vh;
+}
+
+.mainText {
+    font-size: 1.8rem;
+    
+    padding-left: 15%;
+    padding-right: 15%;
+
+    text-align: center;
+}
+
+.mainImg {
+    height: 50vh;
+    width: auto;
+}
+
+.imgDiv {
+    margin-top: 5vh;
+    text-align: center;
+
+    display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: 1fr;
+
+user-select: none;
+-moz-user-select: none;
+-khtml-user-select: none;
+-webkit-user-select: none;
+-o-user-select: none;
+}
+
+.icon {
+position: relative;
+top: 40%;
+}
+
+.divIconsLeft {
+    text-align: left;
+    z-index: 10;
+}
+
+.divIconsRight {
+    text-align: right;
+    z-index: 10;
+}
+
+
+.divDots {
+    text-align: center;
+    position: relative;
+    bottom: 5vh;
+}
+
+.dot {
+    font-size: 6rem;
+    display: inline;
+    padding: 20px;
+    color: white;
+
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+.colorDot {
+    color: black;
+}
+
+.iconBack {
+position: absolute;
+    left: 2%;
+
+    color: white;
+}
+
+/* LINKS */
+
+.mainLinkWebSite {
+    text-decoration: none;
+}
+
+.mainLinkWebSite:hover {
+    text-decoration: none;
+
+}
+
+.mainDiv {
+    height: 80vh;
+}
+
+
+.textHeaderSecond {
+    padding-bottom: 10px;
+}
+
+.mainHeader {
+    padding-bottom: 15px;
+}
+
+.mainLinkWidth {
+
+  margin: auto;
+  width: 40%;
+
+  margin-top: 30px;
+}
+
+/* small screen */
+
+@media only screen and (max-width: 1780px) {
+
+    .divDots {
+        text-align: center;
+        position: relative;
+        bottom: 15vh;
+        }
+
+}
+
+@media only screen and (max-width: 1100px) {
+
+    .mainLinkWidth {
+
+        margin: auto;
+        width: 100%;
+      
+        margin-top: 30px;
+      }
+
+    .mainTextInfoDiv {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-row-gap: 20px;    
+    }
+
+    .mainImg {
+        height: 40vh;
+
+        width: 100%;
+        object-fit: scale-down;
+    }
+
+    .imgDiv {
+        text-align: center;
+        margin-top: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+
+    .divIconsLeft {
+        position: absolute;
+        top: 60%;
+        right: 2%;
+    }
+    
+    .divIconsRight {
+        position: absolute;
+        top: 60%;
+        left: 2%;
+    }
+
+}
+
+@media only screen and (max-width: 890px) { 
+
+    .mainTextInfoDiv {
+        height: 30%;
+        overflow: scroll;
+
+        margin-bottom: 2vh;
+    }
+
+    .mainTextInfoDiv {
+        background-clip: padding-box;
+        box-shadow: 2px 5px 5px white;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+
+    .mainTextInfoDiv {
+        height: 40%;
+
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .mainTextInfoDiv {
+        background-clip: padding-box;
+        box-shadow: 2px 5px 5px white;
+    }
+
+    .divIconsLeft {
+   
+        top: 70%;
+
+    }
+    
+    .divIconsRight {
+     
+        top: 70%;
+
+    }
+
+    .iconBack {
+        display: none;
+    }
+
+        
+    .divDots {
+     text-align: center;
+     position: relative;
+     bottom: 15%;
+     }
+
+     .mainImg {
+        position: relative;
+
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+
+    .mainImg {
+        position: relative;
+       top: 10%;
+    }
+
+    .divIconsLeft {
+        position: absolute;
+        top: 73%;
+        right: 2%;
+    }
+    
+    .divIconsRight {
+        position: absolute;
+        top: 73%;
+        left: 2%;
+    }
+
+    .holePage {
+        padding: 0 10px 0 10px;
+    }
+
+}
+
+@media only screen and (max-width: 370px) {
+
+    .mainHeader {
+
+        font-size: 3rem;
+
+    }
+
+}
+
+@media only screen and (max-height: 770px) { 
+
+    .mainTextInfoDiv {
+        height: 40%;
+        overflow: scroll;
+
+        margin-bottom: 10px;
+    }
+
+    .mainImg {
+        position: relative;
+        bottom: 5%;
+    }
+
+    .divDots {
+        text-align: center;
+        position: relative;
+        bottom: 25%;
+        }
+
+        .mainDiv {
+            height: 78vh;
+        }
+
+}
