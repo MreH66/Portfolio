@@ -131,13 +131,7 @@ function MainPage() {
               changeInfo !== "" ? c.postionWithOutImg : c.positionLinksGrid
             }
           >
-            <div
-              className={
-                popUpText
-                  ? c.gridLinks + " " + c.onlyOneDiv
-                  : c.gridLinks + " " + c.twoDivs
-              }
-            >
+            <div className={c.gridLinks + " " + c.twoDivs}>
               <Link
                 className={c.up1}
                 target="_blank"
