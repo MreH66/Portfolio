@@ -739,7 +739,7 @@ height: 230px;
   .twoDivs {
     position: relative;
     bottom: 21vh;
-    left: 20vh;
+    left: 22vh;
   }
  
 }
@@ -747,7 +747,7 @@ height: 230px;
 @media only screen and (max-width: 330px) {
 
   .twoDivs {
-    left: 18vh;
+    left: 20vh;
   }
 
   .mainImg {
