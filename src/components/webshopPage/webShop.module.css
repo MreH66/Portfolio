@@ -207,7 +207,6 @@ position: absolute;
 
     .mainTextInfoDiv {
         background-clip: padding-box;
-        box-shadow: 2px 5px 5px white;
     }
 
 }
@@ -224,7 +223,7 @@ position: absolute;
 
     .mainTextInfoDiv {
         background-clip: padding-box;
-        box-shadow: 2px 5px 5px white;
+
     }
 
     .divIconsLeft {
