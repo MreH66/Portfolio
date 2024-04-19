@@ -34,9 +34,7 @@ function AbouteMe({ infoType }) {
           <div className={c.mainDivOnlyText}>
             <p className={c.textFirst}>About me</p>
             <p className={c.textSecond}>
-              I started programing in 2022 so far it was amazing journey, mainly
-              focusing on front-end web development so far and exited to learn
-              and exlore more of this world of programing
+              I started programing in 2022 so far it was amazing journey
             </p>
           </div>
         </div>
