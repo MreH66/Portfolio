@@ -755,3 +755,12 @@ height: 230px;
   }
  
 }
+
+@media only screen and (max-height: 800px) {
+
+  .infoMainDiv {
+    top: 23%;
+
+}
+ 
+}
