@@ -26,7 +26,7 @@ const webShopPic = [
 const textWebShop = {
   title: "Web shop",
   about:
-    "Dynamic web shop with functionality for admin to post new items to shop",
+    "Dynamic web shop with functionality for the admin to post new items to the shop",
   skills:
     " HTML , CSS , JavaScript , React , React router dom , Firebase (Firestore, Authentication , storage) ...",
 };
@@ -39,7 +39,8 @@ const landingPagePic = [
 
 const textLendingPage = {
   title: "Landing Page",
-  about: "Site made to show my basic skills in front-end web development",
+  about:
+    "A site made to showcase my basic skills in front-end web development",
   skills: "HTML , CSS , JavaScript , Next.js",
 };
 

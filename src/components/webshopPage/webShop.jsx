@@ -43,7 +43,7 @@ function WebsitePage({ pics, text }) {
               <p className={c.mainText}>{text.skills}</p>
             </div>
           </div>
-          <div>
+          <div className={c.imgDivSmallScreen}>
             <>
               <Swiper
                 pagination={{
