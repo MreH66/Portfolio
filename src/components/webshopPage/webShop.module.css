@@ -44,59 +44,7 @@ margin-bottom: 2vh;
     width: auto;
 }
 
-.imgDiv {
-    margin-top: 5vh;
-    text-align: center;
 
-    display: grid;
-grid-template-columns: repeat(3, 1fr);
-grid-template-rows: 1fr;
-
-user-select: none;
--moz-user-select: none;
--khtml-user-select: none;
--webkit-user-select: none;
--o-user-select: none;
-}
-
-.icon {
-position: relative;
-top: 40%;
-}
-
-.divIconsLeft {
-    text-align: left;
-    z-index: 10;
-}
-
-.divIconsRight {
-    text-align: right;
-    z-index: 10;
-}
-
-
-.divDots {
-    text-align: center;
-    position: relative;
-    bottom: 5vh;
-}
-
-.dot {
-    font-size: 6rem;
-    display: inline;
-    padding: 20px;
-    color: white;
-
-    user-select: none;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    -o-user-select: none;
-}
-
-.colorDot {
-    color: black;
-}
 
 .iconBack {
 position: absolute;
@@ -104,8 +52,6 @@ position: absolute;
 
     color: white;
 }
-
-/* LINKS */
 
 .mainLinkWebSite {
     text-decoration: none;
@@ -137,18 +83,6 @@ position: absolute;
   margin-top: 30px;
 }
 
-/* small screen */
-
-@media only screen and (max-width: 1780px) {
-
-    .divDots {
-        text-align: center;
-        position: relative;
-        bottom: 15vh;
-        }
-
-}
-
 @media only screen and (max-width: 1100px) {
 
     .mainLinkWidth {
@@ -169,29 +103,8 @@ position: absolute;
     .mainImg {
         height: 40vh;
 
-        width: 100%;
+        width: 70%;
         object-fit: scale-down;
-    }
-
-    .imgDiv {
-        text-align: center;
-        margin-top: 0;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-    }
-
-
-    .divIconsLeft {
-        position: absolute;
-        top: 60%;
-        right: 2%;
-    }
-    
-    .divIconsRight {
-        position: absolute;
-        top: 60%;
-        left: 2%;
     }
 
 }
@@ -226,28 +139,11 @@ position: absolute;
 
     }
 
-    .divIconsLeft {
-   
-        top: 70%;
-
-    }
-    
-    .divIconsRight {
-     
-        top: 70%;
-
-    }
-
     .iconBack {
         display: none;
     }
 
-        
-    .divDots {
-     text-align: center;
-     position: relative;
-     bottom: 15%;
-     }
+    
 
      .mainImg {
         position: relative;
@@ -262,18 +158,9 @@ position: absolute;
         position: relative;
        top: 10%;
     }
-
-    .divIconsLeft {
-        position: absolute;
-        top: 73%;
-        right: 2%;
-    }
     
-    .divIconsRight {
-        position: absolute;
-        top: 73%;
-        left: 2%;
-    }
+ 
+
 
     .holePage {
         padding: 0 10px 0 10px;
@@ -305,11 +192,6 @@ position: absolute;
         bottom: 5%;
     }
 
-    .divDots {
-        text-align: center;
-        position: relative;
-        bottom: 25%;
-        }
 
         .mainDiv {
             height: 78vh;

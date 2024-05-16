@@ -2,41 +2,24 @@ import c from "./webShop.module.css";
 
 import { useEffect, useState } from "react";
 
-import { GoChevronLeft } from "react-icons/go";
-import { GoChevronRight } from "react-icons/go";
 import { IoArrowBackSharp } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination } from "swiper/modules";
+
 function WebsitePage({ pics, text }) {
-  const [picNumber, setPicNumber] = useState(0);
   const [linkText, setLinkText] = useState("");
 
   useEffect(() => {
     if (location.pathname.substring(1) === "webshop") {
-      setLinkText("https://web-shop1.vercel.app/");
+      setLinkText("https://github.com/MreH66/web-shop1");
     } else if (location.pathname.substring(1) === "website") {
       setLinkText("https://basics1-drab.vercel.app/");
     }
   });
-
-  function handleClick(side) {
-    switch (side) {
-      case "left":
-        if (picNumber === 0) {
-          setPicNumber(pics.length - 1);
-          return;
-        }
-        setPicNumber(picNumber - 1);
-        break;
-      case "right":
-        if (picNumber === pics.length - 1) {
-          setPicNumber(0);
-          return;
-        }
-        setPicNumber(picNumber + 1);
-        break;
-    }
-  }
 
   return (
     <>
@@ -60,38 +43,26 @@ function WebsitePage({ pics, text }) {
               <p className={c.mainText}>{text.skills}</p>
             </div>
           </div>
-          <div className={c.imgDiv}>
-            <div
-              onClick={() => {
-                handleClick("left");
-              }}
-              className={c.divIconsRight}
-            >
-              <GoChevronLeft size={80} className={c.icon} />
-            </div>
-            <img className={c.mainImg} src={pics[picNumber].pic} />
-            <div
-              onClick={() => {
-                handleClick("right");
-              }}
-              className={c.divIconsLeft}
-            >
-              <GoChevronRight size={80} className={c.icon} />
-            </div>
-          </div>
-          <div className={c.divDots}>
-            {pics.map((item) => {
-              return (
-                <p
-                  key={item.num}
-                  className={
-                    item.num === picNumber ? c.dot + " " + c.colorDot : c.dot
-                  }
-                >
-                  .
-                </p>
-              );
-            })}
+          <div>
+            <>
+              <Swiper
+                pagination={{
+                  dynamicBullets: true,
+                }}
+                modules={[Pagination]}
+                className="mySwiper"
+              >
+                {pics.map((pic) => {
+                  return (
+                    <>
+                      <SwiperSlide>
+                        <img className={c.mainImg} src={pic.pic}></img>
+                      </SwiperSlide>
+                    </>
+                  );
+                })}
+              </Swiper>
+            </>
           </div>
         </div>
       </div>

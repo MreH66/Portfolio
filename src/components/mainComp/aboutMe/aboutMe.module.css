@@ -112,7 +112,7 @@ grid-row-gap: 0px;
     overflow: scroll;   
     direction: rtl;
     padding: 10px;
-    height: 64vh;
+    height: 55vh;
   }
 
 }
@@ -131,7 +131,7 @@ grid-row-gap: 0px;
 position: relative;
 top: 25%;
     padding: 10px;
-    height: 50vh;
+    height: 45vh;
 
     width: 180%;
   }
@@ -207,9 +207,10 @@ top: 25%;
   .mainDivScroll {
     top: 50%;
    padding: 15px;
+   padding-top: 10%;
     direction: ltr;
     width: auto;
-    height: 45vh;
+    height: 40vh;
   }
 
   .gridProjects {
@@ -220,7 +221,7 @@ top: 25%;
 
   .mainDivSecond {
     position: relative;
-    top: 15%;
+    top: 23%;
     padding-left: 2%;
     padding-right: 2%;
     margin-left: 5%;
@@ -230,7 +231,7 @@ top: 25%;
     overflow: scroll;
     direction: rtl;
 
-    height: 50vh;
+    height: 40vh;
   }
 
  }

@@ -189,6 +189,8 @@ grid-template-rows: 1fr;
   .MainLinksAndImgDiv {
     right: 20%;
   }
+
+
 }
 
 @media (min-width: 500px)  and (max-width: 800px) {
@@ -321,7 +323,7 @@ grid-template-rows: 1fr;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
 
-width: 85%;
+width: 180px;
 height: 25vh;
 margin: 5%;
 margin-top: 5vh;
@@ -763,4 +765,12 @@ height: 230px;
 
 }
  
+}
+
+@media only screen and (min-width:850px) {
+
+  .show {
+    display: none;
+  }
+
 }

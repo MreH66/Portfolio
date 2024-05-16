@@ -37,3 +37,12 @@ p {
     font-size: 2rem;
     color: white;
 }
+
+  
+  .swiper-slide {
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
